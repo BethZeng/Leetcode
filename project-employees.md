@@ -8,7 +8,7 @@ Table:
 
 employee\_id is a foreign key to the Employee table
 
-1. Employee\(employee\_id\[int\], name\[varchar\], experience\_years\[int\]\)
+   2. Employee\(employee\_id\[int\], name\[varchar\], experience\_years\[int\]\)
 
 employee\_id is the primary key of this table
 
