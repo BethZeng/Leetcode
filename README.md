@@ -2,7 +2,7 @@
 description: A Record of My Problem Solving and Studying MYSQL Journey.
 ---
 
-# Leetcode\_DataBase
+# LeetCode/Leetcode\_DataBase
 
 ## Getting Super Powers
 

@@ -2,7 +2,7 @@
 description: 'Project Employees I, II, III'
 ---
 
-# Project Employees.sql
+# Project Employees
 
 #### Table: 
 
@@ -18,9 +18,9 @@ description: 'Project Employees I, II, III'
 
 #### _Q1: Write an SQL query that reports the average experience years of all the employees for each project, rounded to 2 digits._ 
 
-#### Q2: Write an SQL query that reports all the **projects** that have the most employees.
+#### _Q2: Write an SQL query that reports all the **projects** that have the most employees._
 
-#### Q3: 
+#### _Q3: Write an SQL query that reports the **most experienced** employees in each project. In case of a tie, report all employees with the maximum number of experience years._
 
 
 
