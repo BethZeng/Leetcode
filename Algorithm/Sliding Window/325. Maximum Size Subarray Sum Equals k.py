@@ -19,6 +19,17 @@ Follow Up:
 Can you do it in O(n) time?
 """
 
+NOTE:
+Hashmap is also used in this problem. 
+
+Iterate the array and calculate the sum, 
+
+if map[sum-k] in the hashmap, update the maxlength=max(maxlength, i-map[sum-k]).
+
+Note that the map should be initialized as {0:-1} which promises the situation that the first n elements meet the requirement not ignored.
+
+Solution:
+ 
  class Solution:
     def maxSubArrayLen(self, nums: List[int], k: int) -> int:
         if not nums or len(nums) == 0:
