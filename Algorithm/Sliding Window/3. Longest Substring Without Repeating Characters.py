@@ -20,7 +20,8 @@ Explanation: The answer is "wke", with the length of 3.
              Note that the answer must be a substring, "pwke" is a subsequence and not a substring.
 '''
 
-Solution: HashTable + Sliding Window
+Solution 1: 
+HashTable + Sliding Window
 Using a hashtable to remember the last index of every char.  And keep tracking the starting point of a valid substring.
 
 start = max(start, last[s[i]] + 1)
@@ -38,4 +39,19 @@ class Solution:
             last[ord(ch)] = i
         return ans
       
+      
+Solution 2:
+class Solution:
+    def lengthOfLongestSubstring(self, s: str) -> int:
+        dic = {}
+        length, left, curmax = 0, 0, 0
+        for index, char in enumerate(s):
+            if char in dic and dic[char] >= left:
+                length = max(length, curmax)
+                curmax = index - dic[char]
+                left = dic[char] + 1
+            else:
+                curmax += 1
+            dic[char] = index
+        return max(length, curmax)
  
